@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5013006272521698344}
   - component: {fileID: 3724803287793856955}
   - component: {fileID: 7749542850701838762}
+  - component: {fileID: 5733805314935920768}
   m_Layer: 0
-  m_Name: Left-Bottom-Right
+  m_Name: StickHold_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5733805314935920768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427496675299592841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 3812370203626725580}
 --- !u!1 &436230501311641551
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3504941520591837325}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Bottom-Right
+  m_Name: StickHold_SpawnPoint_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,8 +140,9 @@ GameObject:
   - component: {fileID: 2139748944127584588}
   - component: {fileID: 1071200563826228664}
   - component: {fileID: 6584816686426471492}
+  - component: {fileID: 1300446270148172062}
   m_Layer: 0
-  m_Name: Right-Top-Right
+  m_Name: StickHold_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,6 +214,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1300446270148172062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008236554008483849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 6974447778412982761}
 --- !u!1 &1455512669599987878
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,8 +238,9 @@ GameObject:
   - component: {fileID: 8415210007727235044}
   - component: {fileID: 5852744161885131109}
   - component: {fileID: 2932010009463091209}
+  - component: {fileID: 8861794587394094691}
   m_Layer: 0
-  m_Name: Left-Top-Left
+  m_Name: StickHold_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,6 +312,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8861794587394094691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455512669599987878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 8637987015891363803}
 --- !u!1 &1719840824733606630
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2474949023540662798}
   m_Layer: 0
-  m_Name: SpawnPoint_Left-Mid-Mid
+  m_Name: StickHold_SpawnPoint_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,6 +356,37 @@ Transform:
   m_Father: {fileID: 8107028977605689937}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1907242817997823346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8936061330697924783}
+  m_Layer: 0
+  m_Name: Fixture_CentralSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8936061330697924783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907242817997823346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7054770754736079305}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1955406254272535145
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8213962405050192235}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Mid-Left
+  m_Name: StickHold_SpawnPoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,8 +429,9 @@ GameObject:
   - component: {fileID: 7022385026380547990}
   - component: {fileID: 6568782042120179069}
   - component: {fileID: 3406443652935009023}
+  - component: {fileID: 3234544161121307794}
   m_Layer: 0
-  m_Name: Right-Bottom-Left
+  m_Name: StickHold_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,6 +503,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3234544161121307794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302845084409738070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 5887337821211642823}
 --- !u!1 &2451488941150602375
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +527,9 @@ GameObject:
   - component: {fileID: 8107028977605689937}
   - component: {fileID: 8954729759141834455}
   - component: {fileID: 5668259002194259898}
+  - component: {fileID: 6950910545392242799}
   m_Layer: 0
-  m_Name: Left-Mid-Mid
+  m_Name: StickHold_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,6 +601,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6950910545392242799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2451488941150602375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 2474949023540662798}
 --- !u!1 &2889482698583326965
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039503363493395734}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Mid-Right
+  m_Name: StickHold_SpawnPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3812370203626725580}
   m_Layer: 0
-  m_Name: SpawnPoint_Left-Bottom-Right
+  m_Name: StickHold_SpawnPoint_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6974447778412982761}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Top-Right
+  m_Name: StickHold_SpawnPoint_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,8 +718,9 @@ GameObject:
   - component: {fileID: 8720465452037156168}
   - component: {fileID: 3929791402958858442}
   - component: {fileID: 5209820555165073186}
+  - component: {fileID: 6790964636049233489}
   m_Layer: 0
-  m_Name: Left-Mid-Left
+  m_Name: StickHold_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,6 +792,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6790964636049233489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3613170053983447545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 6680559156023183693}
 --- !u!1 &3991234061457588721
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6680559156023183693}
   m_Layer: 0
-  m_Name: SpawnPoint-Left-Mid-Left
+  m_Name: StickHold_SpawnPoint_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,8 +828,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3991234061457588721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0.0000012919045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -732,8 +847,9 @@ GameObject:
   - component: {fileID: 925835793614559536}
   - component: {fileID: 8106701002857038161}
   - component: {fileID: 7176836368588484107}
+  - component: {fileID: 4773268620254121420}
   m_Layer: 0
-  m_Name: Right-Mid-Right
+  m_Name: StickHold_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,6 +921,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4773268620254121420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010545412637728587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 2039503363493395734}
 --- !u!1 &4067465719905623954
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5887337821211642823}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Bottom-Left
+  m_Name: StickHold_SpawnPoint_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8637987015891363803}
   m_Layer: 0
-  m_Name: SpawnPoint-Left-Top-Left
+  m_Name: StickHold_SpawnPoint_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -878,8 +1007,9 @@ GameObject:
   - component: {fileID: 3231871682851082013}
   - component: {fileID: 4418440342247225160}
   - component: {fileID: 297970117817242295}
+  - component: {fileID: 6370928508856531635}
   m_Layer: 0
-  m_Name: Right-Top-Left
+  m_Name: StickHold_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,6 +1081,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6370928508856531635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372839977689396397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 4348673068533891134}
 --- !u!1 &4415356799763740668
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,8 +1105,9 @@ GameObject:
   - component: {fileID: 5946661239607304112}
   - component: {fileID: 2120189834843989710}
   - component: {fileID: 6708969439740231677}
+  - component: {fileID: 3650095156255024195}
   m_Layer: 0
-  m_Name: Right-Mid-Mid
+  m_Name: StickHold_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,6 +1179,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3650095156255024195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415356799763740668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 4895931704495627241}
 --- !u!1 &4742680678759314121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,8 +1203,9 @@ GameObject:
   - component: {fileID: 629330601626890249}
   - component: {fileID: 7408343007182748197}
   - component: {fileID: 7476942752120351298}
+  - component: {fileID: 6890891902451532838}
   m_Layer: 0
-  m_Name: Left-Bottom-Left
+  m_Name: StickHold_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1119,6 +1277,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6890891902451532838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742680678759314121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 3403420158229221324}
 --- !u!1 &5192677522816675727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,8 +1301,9 @@ GameObject:
   - component: {fileID: 6957926223152939923}
   - component: {fileID: 3458804579647022076}
   - component: {fileID: 8945577810974586484}
+  - component: {fileID: 1754969488279382112}
   m_Layer: 0
-  m_Name: Right-Mid-Left
+  m_Name: StickHold_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,6 +1375,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1754969488279382112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192677522816675727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 8213962405050192235}
 --- !u!1 &5887182623272924408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4348673068533891134}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Top-Left
+  m_Name: StickHold_SpawnPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1244,7 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8842793125496510866}
   m_Layer: 0
-  m_Name: SpawnPoint_Left-Top-Right
+  m_Name: StickHold_SpawnPoint_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1276,7 +1461,7 @@ GameObject:
   - component: {fileID: 7054770754736079305}
   - component: {fileID: 2070690597791136767}
   - component: {fileID: 5728608739211020038}
-  - component: {fileID: 5630022586427214243}
+  - component: {fileID: 6039388619472119180}
   m_Layer: 0
   m_Name: Fixturplatta_Unity
   m_TagString: Untagged
@@ -1310,6 +1495,7 @@ Transform:
   - {fileID: 925835793614559536}
   - {fileID: 5946661239607304112}
   - {fileID: 2139748944127584588}
+  - {fileID: 8936061330697924783}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1363,7 +1549,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5630022586427214243
+--- !u!114 &6039388619472119180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1372,25 +1558,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 6322153682960724954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9f04493463164d40a41a55dd086a158, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa0d0bbe345eac4e8b7668a8cd4544a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 75
+  stickAttachments:
+  - {fileID: 1300446270148172062}
+  - {fileID: 6370928508856531635}
+  - {fileID: 4773268620254121420}
+  - {fileID: 3650095156255024195}
+  - {fileID: 1754969488279382112}
+  - {fileID: 9060125657667534254}
+  - {fileID: 3234544161121307794}
+  - {fileID: 5882866957765420783}
+  - {fileID: 8861794587394094691}
+  - {fileID: 7560735077075010865}
+  - {fileID: 6950910545392242799}
+  - {fileID: 6790964636049233489}
+  - {fileID: 5733805314935920768}
+  - {fileID: 6890891902451532838}
+  initialStickAttachments:
+  - {fileID: 1300446270148172062}
+  - {fileID: 8861794587394094691}
+  - {fileID: 6890891902451532838}
+  - {fileID: 5882866957765420783}
+  - {fileID: 5733805314935920768}
+  - {fileID: 6370928508856531635}
+  - {fileID: 3234544161121307794}
+  - {fileID: 9060125657667534254}
   stickPrefab: {fileID: 184554205437916992, guid: 1db2016ada71c614b8389fb1dfb85b03, type: 3}
-  spawnPoints:
-  - {fileID: 8637987015891363803}
-  - {fileID: 3403420158229221324}
-  - {fileID: 6680559156023183693}
-  - {fileID: 6019047629464992330}
-  - {fileID: 8842793125496510866}
-  - {fileID: 3812370203626725580}
-  - {fileID: 2474949023540662798}
-  - {fileID: 8213962405050192235}
-  - {fileID: 4348673068533891134}
-  - {fileID: 5887337821211642823}
-  - {fileID: 3504941520591837325}
-  - {fileID: 2039503363493395734}
-  - {fileID: 4895931704495627241}
-  - {fileID: 6974447778412982761}
+  leftSpawnPoint: {fileID: 4895931704495627241}
+  rightSpawnPoint: {fileID: 2474949023540662798}
+  centralSpawnPoint: {fileID: 8936061330697924783}
 --- !u!1 &6734628449255589155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4895931704495627241}
   m_Layer: 0
-  m_Name: SpawnPoint_Right-Mid-Mid
+  m_Name: StickHold_SpawnPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1433,8 +1632,9 @@ GameObject:
   - component: {fileID: 2644191019285436821}
   - component: {fileID: 7417373101810180068}
   - component: {fileID: 6921551426331200579}
+  - component: {fileID: 9060125657667534254}
   m_Layer: 0
-  m_Name: Right-Bottom-Right
+  m_Name: StickHold_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1506,6 +1706,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9060125657667534254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814322914879016708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 3504941520591837325}
 --- !u!1 &7731991001690388362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,8 +1730,9 @@ GameObject:
   - component: {fileID: 8762491379133084207}
   - component: {fileID: 7194603557204659301}
   - component: {fileID: 1158123845552231092}
+  - component: {fileID: 7560735077075010865}
   m_Layer: 0
-  m_Name: Left-Mid-Right
+  m_Name: StickHold_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1590,6 +1804,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7560735077075010865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731991001690388362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 6019047629464992330}
 --- !u!1 &7808371208645784554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,8 +1828,9 @@ GameObject:
   - component: {fileID: 5843088152002947688}
   - component: {fileID: 2953078801197242813}
   - component: {fileID: 4722041843569075771}
+  - component: {fileID: 5882866957765420783}
   m_Layer: 0
-  m_Name: Left-Top-Right
+  m_Name: StickHold_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1674,6 +1902,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5882866957765420783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808371208645784554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f889ac7335b8a134c8e2cd186bc186a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 8842793125496510866}
 --- !u!1 &7894242260181461395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3403420158229221324}
   m_Layer: 0
-  m_Name: SpawnPoint-Left-Bottom-Left
+  m_Name: StickHold_SpawnPoint_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1715,7 +1956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6019047629464992330}
   m_Layer: 0
-  m_Name: SpawnPoint_Left-Mid-Right
+  m_Name: StickHold_SpawnPoint_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

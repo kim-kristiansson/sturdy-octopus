@@ -4,8 +4,8 @@ using System.Collections.Generic;
 public class StickSpawner : MonoBehaviour
 {
     public GameObject stickPrefab;
-    public List<Transform> spawnPoints = new();
-    public List<int> initialSpawnIndices; // Indices of spawn points to spawn sticks at the start
+    public List<Transform> spawnPoints = new List<Transform>();
+    public List<int> initialSpawnIndices = new List<int>();
 
     void Start()
     {
@@ -24,11 +24,5 @@ public class StickSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnGroupOfSticks(List<int> indices)
-    {
-        foreach (int index in indices)
-        {
-            SpawnStickAtPoint(index);
-        }
-    }
+    // ... Rest of your script ...
 }
