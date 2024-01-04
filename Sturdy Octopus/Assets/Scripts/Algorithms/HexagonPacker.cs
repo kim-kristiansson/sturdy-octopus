@@ -3,29 +3,38 @@ using System.Collections.Generic;
 
 public class HexagonPacker : MonoBehaviour
 {
-    public float cylinderDiameter = 1f;
     public float hexagonSideLength = 5f;
     public GameObject cylinderPrefab;
     private readonly List<Vector2> hexVertices = new List<Vector2>();
 
     void Start()
     {
+        Debug.Log("Cylinder diameter: " + cylinderPrefab.transform.localScale.x);
+        float cylinderDiameter = cylinderPrefab.transform.localScale.x;
+
         float radius = cylinderDiameter / 2f;
         CalculateHexagonVertices();
 
-        // Spacing between cylinder centers
+        // Correct vertical spacing for hexagonal packing
+        float verticalSpacing = Mathf.Sqrt(3) * radius; // sqrt(3) * radius for hexagonal close packing
         float horizontalSpacing = cylinderDiameter;
-        float verticalSpacing = 0.75f * cylinderDiameter;
 
-        // Cover the area of the hexagon with a grid of points
-        for (float z = -hexagonSideLength; z <= hexagonSideLength; z += verticalSpacing)
+        // Determine the number of rows needed
+        int numRows = Mathf.CeilToInt(hexagonSideLength / verticalSpacing);
+        for (int row = -numRows; row <= numRows; row++)
         {
-            bool isOffsetRow = Mathf.Abs(z / verticalSpacing) % 2 == 1;
+            float z = row * verticalSpacing;
+            bool isOffsetRow = Mathf.Abs(row) % 2 == 1;
             float xOffset = isOffsetRow ? radius : 0f;
 
-            for (float x = -hexagonSideLength + xOffset; x <= hexagonSideLength; x += horizontalSpacing)
+            // Determine the horizontal range for each row
+            float rowWidth = hexagonSideLength - Mathf.Abs(z) / Mathf.Sqrt(3);
+            int numCylindersInRow = Mathf.CeilToInt(rowWidth / horizontalSpacing);
+
+            for (int col = -numCylindersInRow; col <= numCylindersInRow; col++)
             {
-                Vector3 pos = new Vector3(x, 0, z); // Y is set to 0, assuming flat terrain
+                float x = col * horizontalSpacing + xOffset;
+                Vector3 pos = new Vector3(x, 0, z);
                 if (IsCircleInsideHexagon(new Vector2(pos.x, pos.z), radius))
                 {
                     Instantiate(cylinderPrefab, pos, Quaternion.identity);
@@ -33,6 +42,7 @@ public class HexagonPacker : MonoBehaviour
             }
         }
     }
+
 
     void CalculateHexagonVertices()
     {
@@ -90,6 +100,8 @@ public class HexagonPacker : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        float cylinderDiameter = cylinderPrefab.transform.localScale.x;
+
         // Draw the hexagon
         Gizmos.color = Color.red;
         for (int i = 0; i < hexVertices.Count; i++)
