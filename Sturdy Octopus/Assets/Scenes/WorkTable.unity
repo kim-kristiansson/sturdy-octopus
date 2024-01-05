@@ -205,9 +205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f4e46cc104c8734fa0220dcc07ec223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cylinderDiameter: 1
-  hexagonSideLength: 5
+  hexagonSideLength: 3
   cylinderPrefab: {fileID: 457420684017424102, guid: 005d6a1536600e344a535360a9efb60f, type: 3}
+  diameterInputField: {fileID: 1863564370}
+  generateButton: {fileID: 1273251145}
 --- !u!4 &460674959
 Transform:
   m_ObjectHideFlags: 0
