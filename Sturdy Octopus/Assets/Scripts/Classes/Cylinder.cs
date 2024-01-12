@@ -37,8 +37,7 @@ public class Cylinder : ProcessItem
             return -1f;
         }
 
-        float diameter = MathF.Max(meshRenderer.bounds.size.x, meshRenderer.bounds.size.z);
-        float radius = diameter / 2f;
+        float radius = transform.localScale.x / 2f;
 
         return Mathf.PI * radius * radius;
     }
