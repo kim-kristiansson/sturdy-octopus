@@ -1,16 +1,13 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Cylinder : ProcessItem
 {
     private MeshRenderer meshRenderer;
-    [SerializeField] private float _length;
-    [SerializeField] private float _diameter;
 
     public float Length { get { return meshRenderer.bounds.size.y; } }
     public float Diameter { get { return MathF.Max(meshRenderer.bounds.size.x, meshRenderer.bounds.size.z); } }
-    public float Weight { get { return _weight; } }
+    public float BaseaArea { get { return CalculateBaseArea(); } }
 
     void Start()
     {
@@ -26,5 +23,13 @@ public class Cylinder : ProcessItem
         }
 
         transform.localScale = new Vector3(diameter, length, diameter);
+    }
+
+    private float CalculateBaseArea()
+    {
+        float diameter = MathF.Max(meshRenderer.bounds.size.x, meshRenderer.bounds.size.z);
+        float radius = diameter / 2f;
+
+        return Mathf.PI * radius * radius;
     }
 }
