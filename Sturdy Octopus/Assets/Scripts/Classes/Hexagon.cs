@@ -2,30 +2,41 @@ using UnityEngine;
 
 public class Hexagon : MonoBehaviour
 {
-    [SerializeField]
-    private float _sideLength;
+    public float SideLength { get { return CalculateSideLength(); } }
 
-    public float SideLength { get { return _sideLength; } }
+    public float Area
+    {
+        get { return CalculateHexagonArea(); }
+    }
 
     void Start()
     {
-        UpdateSideLength();
+        CalculateSideLength();
     }
 
-    private void UpdateSideLength()
+    private float CalculateSideLength()
     {
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
 
-        if (meshRenderer != null)
+        if (TryGetComponent<MeshRenderer>(out var meshRenderer))
         {
             float longDiameter = Mathf.Max(meshRenderer.bounds.size.x, meshRenderer.bounds.size.y); // Assuming hexagon lies flat on X-Y plane
-            _sideLength = longDiameter / 2; // Calculating side length
-            Debug.Log("Side Length: " + _sideLength);
+            float sideLength = longDiameter / 2; // Calculating side length
+            Debug.Log("Side Length: " + sideLength);
+
+            return sideLength;
         }
         else
         {
             Debug.LogError("MeshRenderer component not found. Disabling the hexagon.");
             this.enabled = false;
+
+            return -1;
         }
+    }
+
+    private float CalculateHexagonArea()
+    {
+        float sideLength = CalculateSideLength();
+        return 3 * Mathf.Sqrt(3) / 2 * sideLength * sideLength;
     }
 }
